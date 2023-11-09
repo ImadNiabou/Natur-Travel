@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reserva</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="shortcut icon" type="image/png" href="img/Logo.png">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda:wght@300;400;500;600&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="header__wrapper">
+				<div class="header__top">
+					<div class="header__top__info">
+						<a href="mailto:Info@espai.es"><i class="fa-solid fa-envelope fa-2xs" style="color: #ffffff;"></i> Info@espai.es</a>
+					    <a href="tel+3463600110"><i class="fa-solid fa-phone fa-2xs" style="color: #ffffff;"></i> +3463600110</a>
+					    <a href="#"><i class="fa-solid fa-location-dot fa-2xs" style="color: #ffffff;"></i> Carrer Entenza 182</a>
+					</div>
+					<div class="social--media">
+						<ul>
+							<li><a href=""><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+							<li><a href=""><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+							<li><a href=""><i class="fa-brands fa-x-twitter fa-xl"></i></a></li>
+							<li><a href=""><i class="fa-brands fa-pinterest fa-xl"></i></a></li>
+							<li><a href=""><i class="fa-brands fa-youtube fa-xl"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<nav id="nav">
+					<div class="nav__logo">
+						<p><a href="index.html"><img src="img/Logo.png" alt="logo"> Natur Travel</a></p>
+					</div>
+					<div class="nav__bar">
+						<ul>
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="index.html#nosotros">Nosotros</a></li>
+							<li><a href="destinos.html">Destinos</a></li>
+							<li><a href="reserva.html">Reserva</a></li>
+							<li><a href="contacto.html">Contacto</a></li>
+						</ul>
+					</div>
+					<input class="nav__bar--search" type="search" name="search">
+				</nav>
+			</div>
+		</header>
+			<main>
+				<section class="section__reserva">
+					<h2>Reserva tu viaje</h2>
+					<div class="section__reserva__wrapper">
+						<div id="formulario">
+							<form class="formulario__reserva" action="php" method="post">
+								<fieldset>
+											<div class="formulario__reserva--fecha--entrada">
+											    <label for="date">Fecha de entrada</label>
+											    <input type="date" name="date" id="date">
+											</div>
+											<div class="formulario__reserva--fecha--salida">
+												<label for="date2">Fecha de salida</label>
+											    <input type="date" name="date2" id="date2">
+											</div>
+
+											<label for="duracion">Duración</label>
+											<select name="duracion" id="duracion">
+												<optgroup label="Seleciona una duración">
+												    <option value="01">De 1 día a 7 días</option>
+												    <option value="01">De 8 días a 14 días</option>
+												    <option value="01">De 15 días a 21 días</option>
+												</optgroup>
+											</select>
+
+											<label for="categorias">Categorias</label>
+											<select name="categorias" id="categorias">
+												<optgroup label="Seleciona una categoria">
+												    <option value="01">Naturaleza</option>
+												    <option value="02">Montaña</option>
+												    <option value="03">playa</option>
+												    <option value="04">Lagos</option>
+												    <option value="05">Vistas al mar</option>
+												    <option value="06">Terrazas</option>
+												    <option value="07">Cuidad</option>
+												    <option value="08">Monumentos</option>
+												    <option value="09">Historicos</option>
+												    <option value="07">Escapadas</option>
+												    <option value="07">Tours</option>
+												    <option value="07">Restaurantes</option>
+												</optgroup>
+											</select>
+
+											<label for="destinos">Destinos</label>
+											<select name="destinos" id="destinos">
+												<optgroup label="España">
+												    <option value="01">Barcelona</option>
+												    <option value="02">Madrid</option>
+												    <option value="03">Valencia</option>
+												    <option value="04">Malaga</option>
+												</optgroup>
+												<optgroup label="Suiza">
+													<option value="01">Ginebra</option>
+													<option value="02">Basilea</option>
+													<option value="03">Interlaken</option>
+													<option value="04">Lugano</option>
+												</optgroup>
+													<optgroup label="España">
+											        <option value="01">Roma</option>
+											        <option value="02">Venecia</option>
+											        <option value="03">Florencia</option>
+											        <option value="04">Milan</option>
+											    </optgroup>
+											    <optgroup label="Noruega">
+											    	<option value="01">Bergen</option>
+											    	<option value="02">Oslo</option>
+											    	<option value="03">Stavanger</option>
+											    	<option value="04">Bodo</option>
+											    </optgroup>										
+											</select>
+
+											<div class="formulario__reserva--cuantas--personas">
+												<label for="personas">Cuantas personas</label>
+											    <input type="range" name="personas" id="personas">
+											</div>
+
+											<div class="formulario__reserva--cuantos--dias">
+												<label for="dias">Cuantos dias</label>
+											    <input type="range" name="dias" id="dias">
+											</div>
+
+									<div class="formulario__reserva--buscar">
+										<input class="last" type="submit" name="Buscar" value="Buscar">
+									</div>						
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</section>
+				<section class="destinos">
+				<div class="destinos__wrapper">
+					<a href="destinos.html"><h2>ESCAPADAS</h2></a>
+					<h3>La mejor opción para tí</h3>
+					<div class="cards__destinos">
+						<figure>
+							<figcaption class="cards--2"><a href="destinos.html#lugano">Naturaleza<img src="img/naturaleza.jpg" alt="naturaleza"></a></figcaption>
+							<p>Lorem ipsum dolor sit </p>						
+						</figure>
+						<figure>
+							<figcaption class="cards--2"><a href="destinos.html#interlaken">Montaña<img src="img/montaña.jpg" alt="montaña"></a></figcaption>	
+							<p>Lorem ipsum t consectet</p>
+						</figure>
+						<figure>
+							<figcaption class="cards--2"><a href="destinos.html#ginebra">Lagos<img src="img/lagos.jpg" alt="lagos"></a></figcaption><p>Lorem iplor sit amet consecte</p>
+						</figure>
+						<figure>
+							<figcaption class="cards--2"><a href="destinos.html#malaga">Playa<img src="img/playa.jpg" alt="playa"></a></figcaption>	
+							<p>Lorem ipsum dolor sit amectetu</p>
+						</figure>
+					</div>
+				</div>
+			</section>
+			</main>	
+
+		<footer>
+			<div id="footer-top">
+				<div class="footer__wrapper">
+					<div class="main-footer">
+						<section class="footer__section1">
+						        <h5>LOCALIZANOS</h5>
+							    <div class="footer__section1--p">					    
+								    <p><i class="fa-sharp fa-solid fa-location-dot fa-2xs" style="color: #ffffff;"></i> C/ Entença 182</p>				    
+								    <p><i class="fa-solid fa-phone fa-2xs" style="color: #ffffff;"></i> <a href="tel:+3493163535">+ 34 93163535</a> </p>
+								    <p><i class="fa-solid fa-envelope fa-2xs" style="color: #ffffff;"></i> <a href="mailto:Info@espai.es">Info@espai.es</a> </p>	   						     
+							       <p><i class="fa-solid fa-arrow-up-right-from-square fa-2xs" style="color: #ffffff;"></i> <a href="#">http://www.espai.es</a> </p>
+						        </div>						    
+						</section>
+						<section class="footer__section2">
+							<h5>SÍGUENOS</h5>
+							<div class="footer__social--media">
+								<ul>
+									<li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-xl"></i> Instagram</a></li>
+									<li><a href="https://www.facebook.com/?locale=es_ES"><i class="fa-brands fa-facebook fa-xl"></i> Facebook</a></li>
+									<li><a href="https://twitter.com/?lang=es"><i class="fa-brands fa-x-twitter fa-xl"></i> Twitter</a></li>
+									<li><a href="https://www.pinterest.es/"><i class="fa-brands fa-pinterest fa-xl"></i> Pinterest</a></li>
+									<li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-xl"></i> Youtube</a></li>
+								</ul>
+							</div>
+						</section>	
+						<section class="footer__section3">
+							<h5>SECCIONES</h5>
+							<ul>
+								<li><a href="#">INÍCIO</a></li>
+								<li><a href="#">NOSOTROS</a></li>
+								<li><a href="#">DESTINOS</a></li>
+								<li><a href="#">RESERVA</a></li>
+								<li><a href="#">CONTACTO</a></li>
+							</ul>
+						</section>											
+					</div>
+				</div>
+			    <div id="footer-bottom">
+				    <div class="wrapper">
+					    <div class="footer__copy">
+						    <p>&copy; 2023 - <a href="#">Imad Niabou</a> - Todos los derechos reservados</p>
+						</div>
+				    </div>					
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
