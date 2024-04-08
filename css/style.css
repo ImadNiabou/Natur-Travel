@@ -373,8 +373,11 @@ h4{
 .hide{
     display: none;
 }
-.show{
+.article__left .show {
     display: block;
+    color: #fff;
+    line-height: 1.9em;
+    margin-bottom: 30px;
 }
 
 

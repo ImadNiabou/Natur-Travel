@@ -2,10 +2,11 @@
 let hideText__btn = document.getElementById("hideText__btn");
 let hideText = document.getElementById("hideText");
 
-hideText__btn.addEventListener("click", toogleText);
+hideText__btn.addEventListener("click", toggleText);
 
-function toogleText() {
-    hideText.classList.toogle("show");
+function toggleText(ev) {
+    ev.preventDefault();
+    hideText.classList.toggle("show");
 
     if(hideText.classList.contains("show")) {
         hideText__btn.innerHTML = "Leer menos";
